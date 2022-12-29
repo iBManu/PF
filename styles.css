@@ -1,0 +1,241 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+    justify-content: center;
+    animation: animacionArriba 1s ease-in-out;
+    z-index: 1;
+}
+
+header button {
+    font-size: 18px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+}
+
+header button:hover {
+    color: blueviolet;
+}
+
+body {
+    margin-top: 5%;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.container > div {
+    flex-grow: 1;
+}
+
+.textcontainer {
+    text-align: left;
+    align-items: center;
+    display: block;
+    margin-top: 20px;
+    margin-left: 25%;
+    animation: animacionIzquierda 1s ease-in-out;
+}
+
+.piccontainer {
+    margin-top: 20px;
+    margin-right: 25%;
+    animation: animacionDerecha 1s ease-in-out;
+}
+
+.textcontainer h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 90px;
+}
+
+.textcontainer h2 {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.textcontainer p {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.profilepic {
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.contact-button {
+    font-size: 18px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+
+.contact-button:hover {
+    background-color: rgb(120, 38, 197);
+    animation: inc 0.1s linear forwards;
+}
+
+.contact-button img {
+    filter: invert();
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    margin: 5px;
+}
+
+.about {
+    width: 100%;
+    height: 600px;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.squarecontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.squareabout {
+    width: 30%;
+    height: 60%;
+    background-color: rgb(247, 247, 247);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(158, 158, 158, 0.2);
+    margin: 2%;
+    padding: 3%;
+    text-align: center;
+}
+
+.squareabout:hover {
+    animation: inc 0.1s linear forwards;
+}
+
+.skills {
+    width: 100%;
+    height: 600px;
+}
+
+.skills h1 {
+    text-align: center;
+}
+
+.services {
+    width: 100%;
+    height: 600px;
+}
+
+.services h1 {
+    text-align: center;
+}
+
+.portfolio {
+    width: 100%;
+    height: 600px;
+}
+
+.portfolio h1 {
+    text-align: center;
+}
+
+.contactme {
+    width: 100%;
+    height: 600px;
+}
+
+.contactme h1 {
+    text-align: center;
+}
+
+@keyframes animacionIzquierda {
+    from {
+        opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes animacionArriba {
+    from {
+        opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes animacionDerecha {
+    from {
+        opacity: 0;
+      transform: translateX(200%);
+    }
+    to {
+        opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes inc {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+  }
+
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blueviolet;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(120, 38, 197);
+  }
+
+  
