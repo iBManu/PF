@@ -18,6 +18,7 @@ header {
 }
 
 header button {
+    display: inli;
     font-size: 18px;
     border: 0;
     background-color: transparent;
@@ -27,6 +28,8 @@ header button {
 
 header button:hover {
     color: blueviolet;
+    border-bottom: 2px solid blueviolet;
+    animation: inc 0.2s linear forwards;
 }
 
 body {
@@ -49,6 +52,23 @@ body {
     margin-top: 20px;
     margin-left: 25%;
     animation: animacionIzquierda 1s ease-in-out;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.button-container img {
+    height: 50px;
+    width: 50px;
+    margin: 20px
+}
+
+.button-container a {
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px;
 }
 
 .piccontainer {
@@ -94,6 +114,7 @@ body {
     align-items: center;
     padding: 10px 20px;
     margin-top: 40px;
+    margin-right: 30%;
 }
 
 .contact-button:hover {
@@ -107,6 +128,18 @@ body {
     width: 30px;
     right: 10px;
     margin: 5px;
+}
+
+.twitter:hover {
+    animation: inc 0.1s linear forwards;
+}
+
+.instagram:hover {
+    animation: inc 0.1s linear forwards;
+}
+
+.github:hover {
+    animation: inc 0.1s linear forwards;
 }
 
 .about {
@@ -136,8 +169,27 @@ body {
     text-align: center;
 }
 
+.squareabout h2 {
+    margin-bottom: 20px;
+}
+
 .squareabout:hover {
     animation: inc 0.1s linear forwards;
+}
+
+.quienicon {
+    height: 50px;
+    width: 50px;
+}
+
+.hagoicon {
+    height: 50px;
+    width: 50px;
+}
+
+.planeoicon {
+    height: 50px;
+    width: 50px;
 }
 
 .skills {
