@@ -201,6 +201,49 @@ body {
     text-align: center;
 }
 
+.skillscontainer {
+    width: 95%;
+    height: 60%;
+    background-color: rgb(247, 247, 247);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(158, 158, 158, 0.2);
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20%;
+    padding-top: 2%;
+    box-sizing: border-box;
+}
+
+.barcontainer {
+    width: 100%;
+    height: 15%;
+}
+
+.bar-percent-box {
+    display: flex;
+    align-items: center;
+}
+
+.bar-percent-box h4 {
+    margin-left: 2.5%;
+}
+
+.progress-bar {
+    width: 20%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: blueviolet;
+    border-radius: 5px;
+  }
+
 .services {
     width: 100%;
     height: 600px;
@@ -289,5 +332,3 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(120, 38, 197);
   }
-
-  
